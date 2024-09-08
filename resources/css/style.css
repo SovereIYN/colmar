@@ -65,3 +65,66 @@ nav {
 .nav-menu a:hover {
     color: aquamarine;
 }
+
+header .mobile {
+    display: none;
+}
+
+
+
+@media (max-width: 810px) {
+
+    .site-header {
+        display: none;
+    }
+
+    /* Basic reset for the ul element */
+    .nav-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+  
+  .nav-menu li {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Reset margin */
+  }
+  
+  .nav-menu img {
+    display: block;
+    width: 40px;
+    height: auto; 
+  }
+  
+
+  .mobile {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex; 
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
