@@ -3,6 +3,17 @@ html {
     color: rgb(40, 40, 40);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
 
 /* header */
 
@@ -127,4 +138,78 @@ header .mobile {
     justify-content: center;
   }
   
+}
+
+
+/* main */
+
+
+#news {
+    display: flex;
+    margin-top: 4rem;
+    background-color: white;
+    width: 100%;
+    max-width: 100%; /* Prevents the container from exceeding the viewport width */
+    padding-top: 2rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+/* Flex containers */
+#news .left_container {
+    flex: 0 0 60%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#news .left_container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#news .right_container {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+#news h2 {
+    font-size: 2.5rem;
+}
+
+#news .name {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+#news .news_container {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+#news .news_container img {
+    flex: 0 0 35%;
+    height: auto;
+    box-sizing: border-box;
+    margin-right: 1rem;
+}
+
+
+.information {
+    flex: 1; /* Take remaining space */
+    padding-left: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    word-wrap: break-word; /* Ensure text wraps properly */
+    overflow-wrap: break-word; /* Break long words */
 }
