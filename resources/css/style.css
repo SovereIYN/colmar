@@ -205,7 +205,16 @@ header .mobile {
     background-color: grey;
 }
 
+@media (max-width: 810px) {
+    #introduction {
+        display: flex;
+        flex-direction: column;
+    }
 
+    #introduction .right_container_introduction .button {
+        margin-bottom: 2rem;
+    }
+}
 
 
 /* news section */
@@ -296,4 +305,20 @@ header .mobile {
 
 .read-more {
     margin: 8px;
+}
+
+
+@media (max-width: 1400px) {
+
+    #news {
+        display: block;
+    }
+
+    #news .left_container {
+        display: none;
+    }
+
+    #news .right_container {
+        padding-left: 0rem;
+    }
 }
