@@ -288,12 +288,11 @@ header .mobile {
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
-    word-wrap: break-word; /* Ensure text wraps properly */
     overflow-wrap: break-word; /* Break long words */
 }
 
 .information_header {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 8px;
 }
 
@@ -307,10 +306,11 @@ header .mobile {
 }
 
 
-@media(max-width: 1400px) {
+@media screen and (max-width: 1400px) {
 
     .news {
         display: block;
+        word-wrap: break-word;
     }
 
     .news .left_container {
@@ -319,6 +319,39 @@ header .mobile {
 
     .news .right_container {
         padding-left: 0rem;
+    }
+    .information {
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news {
+        display: block;
+        word-wrap: break-word;
+    }
+
+    .news .left_container {
+        display: none; /* Hide left container on smaller screens */
+    }
+
+    .news .right_container {
+        padding-left: 0; /* Adjust padding for smaller screens */
+    }
+
+    .information {
+        word-wrap: break-word;
+        padding: 10px; /* Add some padding for better readability */
+    }
+
+    .news_container img {
+        flex: 0 0 20%; /* Ensure images scale with the container */
+        width: 20%;
+        height: auto;
+    }
+
+    .news_container {
+        margin-bottom: 20px; /* Add space between news containers */
     }
 }
 
@@ -363,12 +396,14 @@ font-size: 1.5rem;
 @media(max-width: 810px) {
     #courses .courses_container {
         flex-direction: column;
+        width: 100%;
     }
 
 
     #courses .course_container {
         margin-top: 0.5rem;
         margin-bottom: 0;
+        width: 100%;
     }
 
 
@@ -379,6 +414,7 @@ font-size: 1.5rem;
     #courses .course_container p {
         display: none;
     }
+
 }
 
 
