@@ -143,14 +143,78 @@ header .mobile {
 
 /* main */
 
+/* introduction section */
+
+ #introduction {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    
+}
+
+#introduction .left_container_introduction {
+    flex: 0 0 60%;
+    padding: 2rem 1.5rem;
+}
+
+#introduction .left_container_introduction img {
+    width: 100%;
+}
+
+
+#introduction .right_container_introduction {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+}
+    
+
+#introduction .right_container_introduction h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+#introduction .right_container_introduction p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+#introduction .right_container_introduction .button {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    width: 50%;
+    color: white;
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    padding: 1rem;
+}
+
+#introduction .right_container_introduction .button:hover {
+    background-color: grey;
+}
+
+
+
+
+/* news section */
 
 #news {
     display: flex;
-    margin-top: 4rem;
     background-color: white;
     width: 100%;
     max-width: 100%; /* Prevents the container from exceeding the viewport width */
-    padding-top: 2rem;
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
@@ -160,6 +224,7 @@ header .mobile {
     flex: 0 0 60%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-top: 2rem;
 }
 
 #news .left_container img {
@@ -190,26 +255,45 @@ header .mobile {
     padding: 1rem;
     width: 100%;
     align-items: center;
-    box-sizing: border-box;
     max-width: 100%;
+    border: 3px solid #ddd; /* Light grey border for a softer look */
+    border-radius: 8px; 
+    background-color: #fff; /* Default background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+
+}
+#news .news_container:hover {
+    background-color: grey; /* Grey background on hover */
 }
 
 
 #news .news_container img {
     flex: 0 0 35%;
     height: auto;
-    box-sizing: border-box;
     margin-right: 1rem;
+
 }
 
 
 .information {
     flex: 1; /* Take remaining space */
     padding-left: 1rem;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
     word-wrap: break-word; /* Ensure text wraps properly */
     overflow-wrap: break-word; /* Break long words */
+}
+
+.information_header {
+    font-size: 1.5rem;
+    margin: 8px;
+}
+
+.information p {
+    font-family:'Times New Roman', Times, serif;
+    margin: 8px;
+}
+
+.read-more {
+    margin: 8px;
 }
