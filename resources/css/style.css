@@ -219,7 +219,7 @@ header .mobile {
 
 /* news section */
 
-#news {
+.news {
     display: flex;
     background-color: white;
     width: 100%;
@@ -229,19 +229,18 @@ header .mobile {
 
 
 /* Flex containers */
-#news .left_container {
+.left_container {
     flex: 0 0 60%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2rem;
 }
-
-#news .left_container img {
+.left_container img {
     max-width: 100%;
     height: auto;
 }
 
-#news .right_container {
+.right_container {
     flex: 0 0 40%;
     display: flex;
     justify-content: center;
@@ -249,17 +248,17 @@ header .mobile {
     padding-left: 1rem;
 }
 
-#news h2 {
+.news h2 {
     font-size: 2.5rem;
 }
 
-#news .name {
+.news .name {
     font-size: 0.9rem;
     font-weight: bold;
 }
 
 
-#news .news_container {
+.news_container {
     display: flex;
     padding: 1rem;
     width: 100%;
@@ -271,12 +270,12 @@ header .mobile {
     transition: background-color 0.3s ease; /* Smooth transition */
 
 }
-#news .news_container:hover {
+.news_container:hover {
     background-color: grey; /* Grey background on hover */
 }
 
 
-#news .news_container img {
+.news_container img {
     flex: 0 0 35%;
     height: auto;
     margin-right: 1rem;
@@ -310,15 +309,15 @@ header .mobile {
 
 @media only screen and (max-width: 1400px) {
 
-    #news {
+    .news {
         display: block;
     }
 
-    #news .left_container {
+    .news .left_container {
         display: none;
     }
 
-    #news .right_container {
+    .news .right_container {
         padding-left: 0rem;
     }
 }
@@ -378,6 +377,60 @@ font-size: 1.5rem;
     }
 
     #courses .course_container p {
+        display: none;
+    }
+}
+
+
+/* thesis section */
+
+#thesis_exhibit {
+    padding-top: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+
+#thesis_exhibit .thesis_container {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    max-width: 100%; /* Prevents the container from exceeding the viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#thesis_exhibit .left_container {
+    flex: 0 0 60%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+}
+
+#thesis_exhibit .right_container {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+
+
+#thesis_exhibit .thesis_container video {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #thesis_exhibit .thesis_container {
+        display: block;
+    }
+
+    #thesis_exhibit .right_container {
+        display: none;
+    }
+
+    #thesis_exhibit .left_container p {
         display: none;
     }
 }
