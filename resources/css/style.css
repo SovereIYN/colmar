@@ -84,7 +84,7 @@ header .mobile {
 
 
 
-@media(max-width: 810px) {
+@media screen and (max-width: 810px) {
 
     .site-header {
         display: none;
@@ -206,7 +206,7 @@ header .mobile {
     background-color: grey;
 }
 
-@media(max-width: 810px) {
+@media screen and (max-width: 810px) {
     #introduction {
         display: flex;
         flex-direction: column;
@@ -394,7 +394,7 @@ font-size: 1.5rem;
     max-width: 100%;
 }
 
-@media(max-width: 810px) {
+@media screen and (max-width: 810px) {
     #courses .courses_container {
         flex-direction: column;
         align-content: center;
@@ -458,7 +458,7 @@ font-size: 1.5rem;
 }
 
 
-@media(max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     #thesis_exhibit .thesis_container {
         display: block;
     }
