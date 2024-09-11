@@ -13,7 +13,6 @@ body {
 
 * {
     box-sizing: border-box;
-    border: 1px solid red; /* Temporary border for debugging */
 }
 
 
